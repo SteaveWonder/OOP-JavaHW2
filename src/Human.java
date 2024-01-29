@@ -1,33 +1,26 @@
 public class Human extends Actor {
-    public Human(String name) {
-        super(name);
+    @Override
+    String getName() {
+        return name;
     }
 
     @Override
-    public String getName() {
-
-        return super.name;
+    public void setMakeOrder() {
+       isMakeOrderStatus = true;
     }
 
     @Override
-    public void setMakeOrder(boolean makeOrder) {
-        super.isMakeOrder = makeOrder;
-    }
-
-    @Override
-    public void setTakeOrder(boolean takeOrder) {
-        super.isTakeOrder = takeOrder;
+    public void setTakeOrder() {
+        isTakeOrderStatus = true;
     }
 
     @Override
     public boolean isMakeOrder() {
-
-        return super.isMakeOrder;
+        return isMakeOrderStatus;
     }
 
     @Override
     public boolean isTakeOrder() {
-
-        return super.isTakeOrder;
+        return isTakeOrderStatus;
     }
 }

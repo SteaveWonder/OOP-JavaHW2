@@ -1,6 +1,6 @@
 public interface ActorBehavoir {
-    void setMakeOrder(boolean makeOrder);
-    void setTakeOrder(boolean takeOrder);
+    void setMakeOrder();
+    void setTakeOrder();
     boolean isMakeOrder();
     boolean isTakeOrder();
 
